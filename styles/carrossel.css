@@ -1,0 +1,142 @@
+.carrossel
+{
+    background-color: #eeefe5;
+}
+
+.carrossel__titulo
+{
+    color: var(--branco);
+    background-color: #970d32;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+    
+}
+
+.swiper
+{
+    background-color:#970d32;
+    padding: 1em;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.swiper-slide img /*Carrossel 6°*/
+{
+    width: 100%;
+}                /*Carrossel 6°*/
+
+.swiper-button-prev, .swiper-button-next /*Carrossel 7°*/
+{
+    display: none;
+}   /*Carrossel 7°*/
+
+.swiper-pagination  /*Carrossel 7°*/
+{
+    
+    position: initial;
+}   /*Carrossel 7°*/
+
+.card__descricao, .card__botoes
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    
+}
+
+.botoes{
+    display: flex;
+}
+
+
+/* PARA BAIXO CONFIGURAÇÕES DO CARD ABAIXO DO CARROSSEL */
+.card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo
+{
+    
+    padding-right: 1em;
+    color:var(--laranja);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.descricao__titulo-livro
+{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5em 0;
+    padding-right: 1em;
+}
+
+.descricao__texto
+{
+    padding-right: 1em;
+    text-align: justify;
+    font-size: 14px;
+}
+.botoes__item
+{
+    margin: 0 0.2em;
+}
+
+.botoes__ancora
+{
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 1.5s;
+}
+
+
+.botoes__ancora:hover
+{
+    background-color: #970d32;
+    color: var(--laranja);
+    border-radius: 20px;
+    transition: 1.5s;
+    
+}
+
+
+@media  screen and (min-width: 1024px) 
+{
+    .carrossel__titulo
+    {
+        font-size: 26px ;
+    }
+
+    .swiper-pagination
+    {
+        margin: 1em 0 1em 0 ;
+    }
+
+    .swiper
+    {
+        width: 60%;
+    }
+
+    .swiper-button-next,.swiper-button-prev
+    {
+        display: block;
+        top:50%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+
+    
+}
